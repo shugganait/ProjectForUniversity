@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PracticeMain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="login">Войти</string>
+    <string name="department_name">Кафедра\n\nИнформатика и вычислительная техника</string>
+    <string name="image">image</string>
+</resources>
