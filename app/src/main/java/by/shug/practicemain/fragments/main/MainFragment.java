@@ -1,4 +1,4 @@
-package by.shug.practicemain.fragments;
+package by.shug.practicemain.fragments.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,6 +17,7 @@ import by.shug.practicemain.databinding.FragmentMainBinding;
 public class MainFragment extends Fragment {
 
     FragmentMainBinding binding;
+    NavController navController;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -28,8 +29,18 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        NavController navController = Navigation.findNavController(view);
+        navController = Navigation.findNavController(view);
         //
+        listeners();
+    }
 
+    private void listeners() {
+        binding.btnBack.setOnClickListener(v -> navController.navigateUp());
+//        binding.btnLogin Регистрация
+        binding.btnSchedule.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_scheduleFragment));
+        binding.btnClass.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_classesFragment));
+        binding.btnPart.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_educationFragment));
+        binding.btnContacts.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_contactsFragment));
+        binding.btnScheme.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_schemeFragment));
     }
 }

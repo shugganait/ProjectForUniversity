@@ -6,4 +6,11 @@
     <string name="login">Войти</string>
     <string name="department_name">Кафедра\n\nИнформатика и вычислительная техника</string>
     <string name="image">image</string>
+    <string name="news">Новости</string>
+    <string name="schedule">Расписание</string>
+    <string name="registration">Регистрация</string>
+    <string name="lecture_classes">Аудитории</string>
+    <string name="study_part">Учебная часть</string>
+    <string name="contacts">Контакты</string>
+    <string name="scheme">Схема</string>
 </resources>

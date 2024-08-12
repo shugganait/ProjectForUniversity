@@ -1,4 +1,4 @@
-package by.shug.practicemain.fragments;
+package by.shug.practicemain.fragments.login;
 
 import android.os.Bundle;
 
@@ -11,13 +11,13 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import by.shug.practicemain.R;
-import by.shug.practicemain.activity.MainActivity;
 import by.shug.practicemain.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
+
+    //ЭКРАН С ПРИВЕТСТВИЕМ, НЕ РЕГИСТРАЦИЯ
 
     FragmentLoginBinding binding;
     NavController navController;
