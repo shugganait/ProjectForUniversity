@@ -1,5 +1,7 @@
 package by.shug.practicemain.fragments.main;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,11 +38,16 @@ public class MainFragment extends Fragment {
 
     private void listeners() {
         binding.btnBack.setOnClickListener(v -> navController.navigateUp());
-//        binding.btnLogin Регистрация
+        binding.btnAvn.setOnClickListener(v -> openWebPage());
         binding.btnSchedule.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_scheduleFragment));
         binding.btnClass.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_classesFragment));
         binding.btnPart.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_educationFragment));
         binding.btnContacts.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_contactsFragment));
-        binding.btnScheme.setOnClickListener(v -> navController.navigate(R.id.action_mainFragment_to_schemeFragment));
+    }
+
+    private void openWebPage() {
+        Uri webpage = Uri.parse("https://avn.kstu.kg");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
     }
 }

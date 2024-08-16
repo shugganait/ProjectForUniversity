@@ -31,9 +31,6 @@
         <action
             android:id="@+id/action_mainFragment_to_contactsFragment"
             app:destination="@id/contactsFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_schemeFragment"
-            app:destination="@id/schemeFragment" />
     </fragment>
     <fragment
         android:id="@+id/scheduleFragment"
@@ -55,9 +52,4 @@
         android:name="by.shug.practicemain.fragments.contacts.ContactsFragment"
         android:label="fragment_contacts"
         tools:layout="@layout/fragment_contacts" />
-    <fragment
-        android:id="@+id/schemeFragment"
-        android:name="by.shug.practicemain.fragments.scheme.SchemeFragment"
-        android:label="fragment_scheme"
-        tools:layout="@layout/fragment_scheme" />
 </navigation>
