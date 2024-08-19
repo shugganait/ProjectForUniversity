@@ -48,6 +48,7 @@ public class ScheduleFragment extends Fragment {
 
                 List<ScheduleModel> filteredList = filterByGroup(scheduleList, selectedText);
                 adapter.setData(filteredList);
+                //
                 binding.rvSchedule.setVisibility(View.VISIBLE);
                 binding.tvChose.setVisibility(View.GONE);
             }
